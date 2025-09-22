@@ -43,7 +43,7 @@ Old Alarm Clock
 Alarm 1
 
 🌐 Live Demo
-
+https://mohdtariq9.github.io/Clocky/
 
 📜 License
 
