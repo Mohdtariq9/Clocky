@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.container {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+}
+
+h1 { margin-bottom: 20px; }
+
+#current-time { font-size: 2.5rem; margin-bottom: 20px; }
+
+.theme-toggle { text-align: right; margin-bottom: 15px; font-size: 14px; }
+.theme-toggle input { margin-right: 5px; }
+
+.set-alarm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.set-alarm input, .set-alarm select, .set-alarm button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+#set-alarm-btn, #custom-sound { margin-top: 5px; }
+
+.set-alarm button {
+  background: #48bb78;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.set-alarm button:hover { background: #38a169; }
+
+#alarms-list { list-style: none; padding: 0; margin-top: 15px; }
+
+#alarms-list li {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#alarms-list button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.clear-btn {
+  background: #f56565;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  background: #e53e3e;
+}
+
+#alarms-list button.stop { background: #f56565; color: #fff; }
+#alarms-list button.snooze { background: #ed8936; color: #fff; }
+
+/* Dark Mode */
+body.dark { background: linear-gradient(135deg,#1a1a2e,#162447); }
+body.dark .container { background: #1f1f2e; color: #eee; }
+body.dark .set-alarm input, body.dark .set-alarm select, body.dark .set-alarm button { background: #2c2c3c; color: #eee; }
